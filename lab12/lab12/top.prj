@@ -1,0 +1,4 @@
+verilog work "PAC_MAN.v"
+verilog work "keypad_scanner_t.v"
+verilog work "clk_div.v"
+verilog work "top.v"

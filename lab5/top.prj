@@ -1,0 +1,6 @@
+verilog work "onepulse.v"
+verilog work "display_ct.v"
+verilog work "debounce.v"
+verilog work "clk_div.v"
+verilog work "bcd_ctr.v"
+verilog work "top.v"

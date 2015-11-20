@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue May 12 17:08:01 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LCD_data<0>" LOCATE = SITE "F6" LEVEL 1;
+COMP "LCD_data<1>" LOCATE = SITE "D3" LEVEL 1;
+COMP "LCD_data<2>" LOCATE = SITE "E4" LEVEL 1;
+COMP "LCD_data<3>" LOCATE = SITE "G6" LEVEL 1;
+COMP "LCD_data<4>" LOCATE = SITE "H7" LEVEL 1;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "LCD_data<5>" LOCATE = SITE "D1" LEVEL 1;
+COMP "LCD_data<6>" LOCATE = SITE "D2" LEVEL 1;
+COMP "LCD_data<7>" LOCATE = SITE "F3" LEVEL 1;
+COMP "LCD_rw" LOCATE = SITE "C2" LEVEL 1;
+COMP "LCD_rstn" LOCATE = SITE "E3" LEVEL 1;
+COMP "LCD_cs1" LOCATE = SITE "F4" LEVEL 1;
+COMP "LCD_cs2" LOCATE = SITE "E1" LEVEL 1;
+COMP "LCD_di" LOCATE = SITE "C1" LEVEL 1;
+COMP "LCD_en" LOCATE = SITE "F5" LEVEL 1;
+SCHEMATIC END;
+

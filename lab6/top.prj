@@ -1,0 +1,8 @@
+verilog work "onepulse.v"
+verilog work "debounce.v"
+verilog work "Rand.v"
+verilog work "Pre_btn.v"
+verilog work "display_star.v"
+verilog work "clk_div.v"
+verilog work "Check.v"
+verilog work "top.v"

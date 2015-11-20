@@ -1,0 +1,7 @@
+verilog work "debounce.v"
+verilog work "pre_btn.v"
+verilog work "note_generator.v"
+verilog work "node_div_controller.v"
+verilog work "clk_div.v"
+verilog work "buzzer_control.v"
+verilog work "top.v"

@@ -1,0 +1,676 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\User\Documents\Hardware Lab\lab11\PAC_MAN.v" into library work
+Parsing module <PAC_MAN>.
+Analyzing Verilog file "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "C:\Users\User\Documents\Hardware Lab\lab11\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+
+Elaborating module <clk_div>.
+WARNING:HDLCompiler:413 - "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v" Line 15: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v" Line 35: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v" Line 46: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v" Line 57: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v" Line 68: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v" Line 79: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v" Line 90: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\User\Documents\Hardware Lab\lab11\top.v" Line 35: Assignment to clock_1MHz ignored, since the identifier is never used
+
+Elaborating module <PAC_MAN>.
+WARNING:HDLCompiler:634 - "C:\Users\User\Documents\Hardware Lab\lab11\top.v" Line 40: Net <rst_n> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Users\User\Documents\Hardware Lab\lab11\top.v".
+INFO:Xst:3210 - "C:\Users\User\Documents\Hardware Lab\lab11\top.v" line 35: Output port <clock_1MHz> of the instance <c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\User\Documents\Hardware Lab\lab11\top.v" line 35: Output port <clock_10KHz> of the instance <c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\User\Documents\Hardware Lab\lab11\top.v" line 35: Output port <clock_1KHz> of the instance <c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\User\Documents\Hardware Lab\lab11\top.v" line 35: Output port <clock_100Hz> of the instance <c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\User\Documents\Hardware Lab\lab11\top.v" line 35: Output port <clock_10Hz> of the instance <c> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\User\Documents\Hardware Lab\lab11\top.v" line 35: Output port <clock_1Hz> of the instance <c> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <rst_n> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "C:\Users\User\Documents\Hardware Lab\lab11\clk_div.v".
+    Found 1-bit register for signal <clock_1MHz_int>.
+    Found 1-bit register for signal <clock_1MHz>.
+    Found 1-bit register for signal <clock_100KHz>.
+    Found 1-bit register for signal <clock_10KHz>.
+    Found 1-bit register for signal <clock_1KHz>.
+    Found 1-bit register for signal <clock_100Hz>.
+    Found 1-bit register for signal <clock_10Hz>.
+    Found 1-bit register for signal <clock_1Hz>.
+    Found 3-bit register for signal <count_100KHz>.
+    Found 1-bit register for signal <clock_100KHz_int>.
+    Found 3-bit register for signal <count_10KHz>.
+    Found 1-bit register for signal <clock_10KHz_int>.
+    Found 3-bit register for signal <count_1KHz>.
+    Found 1-bit register for signal <clock_1KHz_int>.
+    Found 3-bit register for signal <count_100Hz>.
+    Found 1-bit register for signal <clock_100Hz_int>.
+    Found 3-bit register for signal <count_10Hz>.
+    Found 1-bit register for signal <clock_10Hz_int>.
+    Found 3-bit register for signal <count_1Hz>.
+    Found 1-bit register for signal <clock_1Hz_int>.
+    Found 5-bit register for signal <count_1MHz>.
+    Found 5-bit adder for signal <count_1MHz[4]_GND_2_o_add_2_OUT> created at line 15.
+    Found 3-bit adder for signal <count_100KHz[2]_GND_2_o_add_7_OUT> created at line 35.
+    Found 3-bit adder for signal <count_10KHz[2]_GND_2_o_add_12_OUT> created at line 46.
+    Found 3-bit adder for signal <count_1KHz[2]_GND_2_o_add_17_OUT> created at line 57.
+    Found 3-bit adder for signal <count_100Hz[2]_GND_2_o_add_22_OUT> created at line 68.
+    Found 3-bit adder for signal <count_10Hz[2]_GND_2_o_add_27_OUT> created at line 79.
+    Found 3-bit adder for signal <count_1Hz[2]_GND_2_o_add_32_OUT> created at line 90.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+Unit <clk_div> synthesized.
+
+Synthesizing Unit <PAC_MAN>.
+    Related source file is "C:\Users\User\Documents\Hardware Lab\lab11\PAC_MAN.v".
+        Init = 3'b000
+        Set_StartLine = 3'b001
+        Clear_Screen = 3'b010
+        Copy_Image = 3'b011
+        Pause = 3'b100
+        Delay = 16'b1000000000000000
+WARNING:Xst:2935 - Signal 'LCD_CS1', unconnected in block 'PAC_MAN', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'LCD_CS2', unconnected in block 'PAC_MAN', is tied to its initial value (0).
+    Found 3-bit register for signal <X_PAGE>.
+    Found 6-bit register for signal <Y>.
+    Found 5-bit register for signal <INDEX>.
+    Found 1-bit register for signal <LCD_DI>.
+    Found 1-bit register for signal <LCD_RW>.
+    Found 2-bit register for signal <IMAGE>.
+    Found 1-bit register for signal <START>.
+    Found 1-bit register for signal <NEW_PAGE>.
+    Found 1-bit register for signal <NEW_COL>.
+    Found 7-bit register for signal <COL_COUNTER>.
+    Found 3-bit register for signal <PAGE_COUNTER>.
+    Found 1-bit register for signal <ENABLE>.
+    Found 8-bit register for signal <LCD_DATA>.
+    Found 3-bit register for signal <STATE>.
+    Found 16-bit register for signal <PAUSE_TIME>.
+    Found 16-bit subtractor for signal <PAUSE_TIME[15]_GND_3_o_sub_87_OUT> created at line 210.
+    Found 6-bit adder for signal <Y[5]_GND_3_o_add_41_OUT> created at line 163.
+    Found 5-bit adder for signal <INDEX[4]_GND_3_o_add_43_OUT> created at line 185.
+    Found 7-bit adder for signal <COL_COUNTER[6]_GND_3_o_add_44_OUT> created at line 186.
+    Found 2-bit adder for signal <IMAGE[1]_GND_3_o_add_47_OUT> created at line 192.
+    Found 3-bit adder for signal <X_PAGE[2]_GND_3_o_add_49_OUT> created at line 197.
+    Found 3-bit adder for signal <PAGE_COUNTER[2]_GND_3_o_add_50_OUT> created at line 199.
+    Found 4x1-bit Read Only RAM for signal <IMAGE[1]_GND_4_o_Mux_107_o>
+    Found 32x14-bit Read Only RAM for signal <_n0623>
+WARNING:Xst:737 - Found 1-bit latch for signal <PATTERN<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PATTERN<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PATTERN<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PATTERN<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PATTERN<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PATTERN<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PATTERN<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PATTERN<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 7-bit comparator greater for signal <COL_COUNTER[6]_PWR_3_o_LessThan_12_o> created at line 139
+    Found 7-bit comparator greater for signal <COL_COUNTER[6]_GND_3_o_LessThan_43_o> created at line 179
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <STATE> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   8 Latch(s).
+	inferred   2 Comparator(s).
+	inferred  68 Multiplexer(s).
+Unit <PAC_MAN> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x14-bit single-port Read Only RAM                   : 1
+ 4x1-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 14
+ 16-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 8
+ 5-bit adder                                           : 2
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 35
+ 1-bit register                                        : 19
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 9
+ 5-bit register                                        : 2
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+# Comparators                                          : 2
+ 7-bit comparator greater                              : 2
+# Multiplexers                                         : 68
+ 1-bit 2-to-1 multiplexer                              : 41
+ 3-bit 2-to-1 multiplexer                              : 16
+ 6-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <PAC_MAN>.
+The following registers are absorbed into counter <Y>: 1 register on signal <Y>.
+The following registers are absorbed into counter <INDEX>: 1 register on signal <INDEX>.
+The following registers are absorbed into counter <IMAGE>: 1 register on signal <IMAGE>.
+The following registers are absorbed into counter <PAUSE_TIME>: 1 register on signal <PAUSE_TIME>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0623> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 14-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <INDEX>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_IMAGE[1]_GND_4_o_Mux_107_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <IMAGE>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <PAC_MAN> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_div>.
+The following registers are absorbed into counter <count_1MHz>: 1 register on signal <count_1MHz>.
+The following registers are absorbed into counter <count_100KHz>: 1 register on signal <count_100KHz>.
+The following registers are absorbed into counter <count_10KHz>: 1 register on signal <count_10KHz>.
+The following registers are absorbed into counter <count_1KHz>: 1 register on signal <count_1KHz>.
+The following registers are absorbed into counter <count_100Hz>: 1 register on signal <count_100Hz>.
+The following registers are absorbed into counter <count_10Hz>: 1 register on signal <count_10Hz>.
+The following registers are absorbed into counter <count_1Hz>: 1 register on signal <count_1Hz>.
+Unit <clk_div> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x14-bit single-port distributed Read Only RAM       : 1
+ 4x1-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 3
+ 3-bit adder                                           : 2
+ 7-bit adder                                           : 1
+# Counters                                             : 11
+ 16-bit down counter                                   : 1
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 6
+ 5-bit up counter                                      : 2
+ 6-bit up counter                                      : 1
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Comparators                                          : 2
+ 7-bit comparator greater                              : 2
+# Multiplexers                                         : 60
+ 1-bit 2-to-1 multiplexer                              : 34
+ 3-bit 2-to-1 multiplexer                              : 16
+ 7-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <clk_div> ...
+
+Optimizing unit <PAC_MAN> ...
+WARNING:Xst:2677 - Node <c/count_100Hz_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_100Hz_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_100Hz_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_10Hz_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_10Hz_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_10Hz_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_1Hz_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_1Hz_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_1Hz_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_1KHz_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_1KHz_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_1KHz_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_10KHz_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_10KHz_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/count_10KHz_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_1Hz> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_1Hz_int> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_10Hz> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_10Hz_int> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_100Hz> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_100Hz_int> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_1KHz> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_1KHz_int> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_10KHz> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_10KHz_int> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c/clock_1MHz> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 1.
+FlipFlop man/STATE_0 has been replicated 2 time(s)
+FlipFlop man/STATE_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 167
+#      GND                         : 1
+#      INV                         : 20
+#      LUT1                        : 1
+#      LUT2                        : 16
+#      LUT3                        : 30
+#      LUT4                        : 11
+#      LUT5                        : 19
+#      LUT6                        : 37
+#      MUXCY                       : 15
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 80
+#      FD                          : 15
+#      FDE                         : 49
+#      FDR                         : 8
+#      LD                          : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              80  out of  18224     0%  
+ Number of Slice LUTs:                  134  out of   9112     1%  
+    Number used as Logic:               134  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    137
+   Number with an unused Flip Flop:      57  out of    137    41%  
+   Number with an unused LUT:             3  out of    137     2%  
+   Number of fully used LUT-FF pairs:    77  out of    137    56%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                | Clock buffer(FF name)  | Load  |
+----------------------------------------------------------------------------+------------------------+-------+
+c/clock_1MHz_int                                                            | NONE(c/count_100KHz_2) | 4     |
+clk                                                                         | BUFGP                  | 7     |
+c/clock_100KHz                                                              | BUFG                   | 61    |
+man/Mram_IMAGE[1]_GND_4_o_Mux_107_o(man/Mram_IMAGE[1]_GND_4_o_Mux_107_o11:O)| NONE(*)(man/PATTERN_0) | 8     |
+----------------------------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.931ns (Maximum Frequency: 254.375MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.484ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c/clock_1MHz_int'
+  Clock period: 2.612ns (frequency: 382.922MHz)
+  Total number of paths / destination ports: 19 / 7
+-------------------------------------------------------------------------
+Delay:               2.612ns (Levels of Logic = 1)
+  Source:            c/count_100KHz_2 (FF)
+  Destination:       c/count_100KHz_2 (FF)
+  Source Clock:      c/clock_1MHz_int rising
+  Destination Clock: c/clock_1MHz_int rising
+
+  Data Path: c/count_100KHz_2 to c/count_100KHz_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.879  c/count_100KHz_2 (c/count_100KHz_2)
+     LUT3:I0->O            3   0.205   0.650  c/n0015<2>1 (c/n0015)
+     FDR:R                     0.430          c/count_100KHz_0
+    ----------------------------------------
+    Total                      2.612ns (1.082ns logic, 1.530ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.853ns (frequency: 350.508MHz)
+  Total number of paths / destination ports: 46 / 11
+-------------------------------------------------------------------------
+Delay:               2.853ns (Levels of Logic = 1)
+  Source:            c/count_1MHz_2 (FF)
+  Destination:       c/count_1MHz_4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: c/count_1MHz_2 to c/count_1MHz_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.447   1.059  c/count_1MHz_2 (c/count_1MHz_2)
+     LUT5:I0->O            5   0.203   0.714  c/n00001 (c/n0000)
+     FDR:R                     0.430          c/count_1MHz_0
+    ----------------------------------------
+    Total                      2.853ns (1.080ns logic, 1.773ns route)
+                                       (37.9% logic, 62.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c/clock_100KHz'
+  Clock period: 3.931ns (frequency: 254.375MHz)
+  Total number of paths / destination ports: 1017 / 110
+-------------------------------------------------------------------------
+Delay:               3.931ns (Levels of Logic = 3)
+  Source:            man/NEW_COL (FF)
+  Destination:       man/COL_COUNTER_6 (FF)
+  Source Clock:      c/clock_100KHz rising
+  Destination Clock: c/clock_100KHz rising
+
+  Data Path: man/NEW_COL to man/COL_COUNTER_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.447   1.062  man/NEW_COL (man/NEW_COL)
+     LUT3:I1->O           13   0.203   0.933  man/Mmux__n0541611 (man/Mmux__n054161)
+     LUT6:I5->O            7   0.205   0.774  man/_n0501_inv3_rstpot (man/_n0501_inv3_rstpot)
+     LUT3:I2->O            1   0.205   0.000  man/COL_COUNTER_0_dpot (man/COL_COUNTER_0_dpot)
+     FDE:D                     0.102          man/COL_COUNTER_0
+    ----------------------------------------
+    Total                      3.931ns (1.162ns logic, 2.769ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c/clock_100KHz'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.382ns (Levels of Logic = 2)
+  Source:            man/ENABLE (FF)
+  Destination:       LCD_en (PAD)
+  Source Clock:      c/clock_100KHz rising
+
+  Data Path: man/ENABLE to LCD_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.580  man/ENABLE (man/ENABLE)
+     LUT2:I1->O            1   0.205   0.579  man/LCD_ENABLE1 (LCD_en_OBUF)
+     OBUF:I->O                 2.571          LCD_en_OBUF (LCD_en)
+    ----------------------------------------
+    Total                      4.382ns (3.223ns logic, 1.159ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.484ns (Levels of Logic = 2)
+  Source:            c/clock_100KHz (FF)
+  Destination:       LCD_en (PAD)
+  Source Clock:      clk rising
+
+  Data Path: c/clock_100KHz to LCD_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.684  c/clock_100KHz (c/clock_100KHz)
+     LUT2:I0->O            1   0.203   0.579  man/LCD_ENABLE1 (LCD_en_OBUF)
+     OBUF:I->O                 2.571          LCD_en_OBUF (LCD_en)
+    ----------------------------------------
+    Total                      4.484ns (3.221ns logic, 1.263ns route)
+                                       (71.8% logic, 28.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock c/clock_100KHz
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+c/clock_100KHz                     |    3.931|         |         |         |
+man/Mram_IMAGE[1]_GND_4_o_Mux_107_o|         |    3.285|         |         |
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c/clock_1MHz_int
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+c/clock_1MHz_int|    2.612|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+c/clock_1MHz_int|    1.165|         |         |         |
+clk             |    2.853|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock man/Mram_IMAGE[1]_GND_4_o_Mux_107_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c/clock_100KHz |         |         |    2.703|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.63 secs
+ 
+--> 
+
+Total memory usage is 236280 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   46 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

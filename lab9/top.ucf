@@ -1,0 +1,22 @@
+# output pins association
+
+NET "audio_bck"    LOC = K16;
+NET "audio_ws"     LOC = L15;
+NET "audio_data"   LOC = L16;
+NET "audio_sysclk" LOC = H17;
+NET "audio_appsel" LOC = H18;
+
+# input pins association
+
+NET "pb[0]" LOC = N3;
+NET "pb[1]" LOC = P4;
+NET "pb[2]" LOC = P3;
+NET "pb[3]" LOC = L6;
+NET "pb[4]" LOC = M5;
+NET "pb[5]" LOC = U2;
+NET "pb[6]" LOC = U1;
+
+NET "reset" LOC = T2;
+
+
+NET "clk" LOC = R10;

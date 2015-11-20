@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Apr 28 19:39:23 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "audio_sysclk" LOCATE = SITE "H17" LEVEL 1;
+COMP "audio_appsel" LOCATE = SITE "H18" LEVEL 1;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "audio_ws" LOCATE = SITE "L15" LEVEL 1;
+COMP "pb<0>" LOCATE = SITE "N3" LEVEL 1;
+COMP "pb<1>" LOCATE = SITE "P4" LEVEL 1;
+COMP "pb<2>" LOCATE = SITE "P3" LEVEL 1;
+COMP "pb<3>" LOCATE = SITE "L6" LEVEL 1;
+COMP "pb<4>" LOCATE = SITE "M5" LEVEL 1;
+COMP "pb<5>" LOCATE = SITE "U2" LEVEL 1;
+COMP "pb<6>" LOCATE = SITE "U1" LEVEL 1;
+COMP "reset" LOCATE = SITE "T2" LEVEL 1;
+COMP "audio_data" LOCATE = SITE "L16" LEVEL 1;
+COMP "audio_bck" LOCATE = SITE "K16" LEVEL 1;
+SCHEMATIC END;
+

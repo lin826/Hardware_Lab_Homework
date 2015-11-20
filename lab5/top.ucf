@@ -1,0 +1,28 @@
+# output pins association
+NET "dig[0]" LOC = T6;
+NET "dig[1]" LOC = V6;
+NET "dig[2]" LOC = U8;
+NET "dig[3]" LOC = V8;
+
+NET "seg[0]" LOC = P6;
+NET "seg[1]" LOC = N4;
+NET "seg[2]" LOC = V5;
+NET "seg[3]" LOC = T5;
+NET "seg[4]" LOC = U7;
+NET "seg[5]" LOC = R3;
+NET "seg[6]" LOC = N5;
+NET "seg[7]" LOC = R5;
+NET "seg[8]" LOC = T3;
+NET "seg[9]" LOC = T4;
+NET "seg[10]" LOC = V4;
+NET "seg[11]" LOC = V7;
+NET "seg[12]" LOC = R7;
+NET "seg[13]" LOC = T7;
+NET "seg[14]" LOC = U5;
+
+# input pins association
+NET "pb_1" LOC = N3;
+NET "pb_2" LOC = P4;
+
+NET "clk_40M" LOC = R10;
+

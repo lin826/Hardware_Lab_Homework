@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Apr 21 16:39:24 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LED" LOCATE = SITE "H5" LEVEL 1;
+COMP "clk_40M" LOCATE = SITE "R10" LEVEL 1;
+COMP "dig<0>" LOCATE = SITE "T6" LEVEL 1;
+COMP "dig<1>" LOCATE = SITE "V6" LEVEL 1;
+COMP "seg<10>" LOCATE = SITE "V4" LEVEL 1;
+COMP "dig<2>" LOCATE = SITE "U8" LEVEL 1;
+COMP "seg<11>" LOCATE = SITE "V7" LEVEL 1;
+COMP "dig<3>" LOCATE = SITE "V8" LEVEL 1;
+COMP "seg<12>" LOCATE = SITE "R7" LEVEL 1;
+COMP "seg<13>" LOCATE = SITE "T7" LEVEL 1;
+COMP "seg<14>" LOCATE = SITE "U5" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "P6" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "N4" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "V5" LEVEL 1;
+COMP "btn_exit" LOCATE = SITE "N3" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "T5" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "U7" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "R3" LEVEL 1;
+COMP "btn_enter" LOCATE = SITE "T2" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "N5" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "R5" LEVEL 1;
+COMP "seg<8>" LOCATE = SITE "T3" LEVEL 1;
+COMP "seg<9>" LOCATE = SITE "T4" LEVEL 1;
+SCHEMATIC END;
+
